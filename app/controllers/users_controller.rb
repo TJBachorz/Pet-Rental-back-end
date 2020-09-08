@@ -1,4 +1,9 @@
 class UsersController < ApplicationController
+    def index
+        @users = User.all  
+        render json: @users, include: [:rentals, :pets]
+    end
+
     def show 
         @user = User.find(params[:id])
         render json: @user, include: [:rentals, :pets]
@@ -9,4 +14,5 @@ class UsersController < ApplicationController
             name: params[:name]
         )
         render json: @user, include: [:rentals, :pets]
+    end    
 end

@@ -13,6 +13,6 @@ class UsersController < ApplicationController
         @user = User.create(
             name: params[:name]
         )
-        render json: @user, include: [:rentals, :pets]
+        redirect_to "http://localhost:3001/user/user.html?user_id=#{@user.id}"
     end    
 end

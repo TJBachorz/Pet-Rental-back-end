@@ -17,6 +17,6 @@ class RentalsController < ApplicationController
             days: params[:days]
         )
 
-        render json: @rental, include: [:pet, :user]
+        redirect_to "http://localhost:3001/user/user.html?user_id=#{@rental.user_id}"
     end
 end

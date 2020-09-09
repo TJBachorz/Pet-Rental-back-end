@@ -110,3 +110,13 @@ Rental.create(
     pet: sadie,
     days: 3
 )
+Rental.create(
+    user: tj,
+    pet: tucker,
+    days: 3
+)
+Rental.create(
+    user: bryan,
+    pet: fluffy,
+    days: 3
+)

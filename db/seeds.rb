@@ -44,7 +44,7 @@ bubba = Pet.create(
     name: "Bubba",
     species: "Cat",
     breed: "Domestic Shorthair",
-    image: "https://www.petful.com/wp-content/uploads/2016/06/american-shorthair-cat.jpg",
+    image: "https://www.carealotpets.com/images/breeding/cat-breeds/AmericanShorthair.jpg",
     loves_to: "Ignore you",
     age: 8,
     rate: 80
@@ -110,9 +110,13 @@ Rental.create(
     pet: sadie,
     days: 3
 )
-
 Rental.create(
     user: tj,
+    pet: tucker,
+    days: 3
+)
+Rental.create(
+    user: bryan,
     pet: fluffy,
-    days: 5
+    days: 3
 )

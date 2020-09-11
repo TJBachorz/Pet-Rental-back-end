@@ -53,7 +53,7 @@ bubba = Pet.create(
     name: "Bubba",
     species: "Cat",
     breed: "Domestic Shorthair",
-    image: "https://www.carealotpets.com/images/breeding/cat-breeds/AmericanShorthair.jpg",
+    image: "https://cat-world.com/wp-content/uploads/2017/03/domestic-shorthair30.jpg",
     loves_to: "Ignore you",
     age: 8,
     rate: 80

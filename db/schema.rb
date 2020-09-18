@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2020_09_08_164439) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "pets", force: :cascade do |t|
     t.string "name"
     t.string "species"
@@ -25,8 +28,8 @@ ActiveRecord::Schema.define(version: 2020_09_08_164439) do
   end
 
   create_table "rentals", force: :cascade do |t|
-    t.integer "pet_id", null: false
-    t.integer "user_id", null: false
+    t.bigint "pet_id", null: false
+    t.bigint "user_id", null: false
     t.integer "days"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

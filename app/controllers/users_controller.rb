@@ -14,6 +14,6 @@ class UsersController < ApplicationController
         @user = User.create(
             name: params[:name]
         )
-        redirect_to "http://localhost:3001/user/user.html?user_id=#{@user.id}"
+        redirect_to "https://pet-renter.web.app/user/user.html?user_id=#{@user.id}"
     end
 end
